@@ -1,5 +1,4 @@
 absl-py==1.0.0
-altair @ file:///tmp/build/80754af9/altair_1599835197802/work
 appnope @ file:///Users/ktietz/demo/mc3/conda-bld/appnope_1629146036738/work
 argon2-cffi @ file:///opt/conda/conda-bld/argon2-cffi_1645000214183/work
 argon2-cffi-bindings @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/croot-wbf5edig/argon2-cffi-bindings_1644845754377/work
