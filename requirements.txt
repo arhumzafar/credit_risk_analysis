@@ -4,6 +4,6 @@ Markdown==3.3.6
 
 pandas==1.3.5
 
-streamlit @ file:///home/conda/feedstock_root/build_artifacts/streamlit_1648660217628/work
+streamlit==1.8.1
 xgboost==1.5.0
 
