@@ -5,10 +5,8 @@ A Streamlit web application that takes in a user's financial background and loan
 and returns whether the user will default on their loan.
 """
 
-from tkinter import Button
 import streamlit as st 
-import pandas as pd 
-import numpy as np
+import pandas as pd
 import pickle
 
 # load in the trained model
@@ -165,7 +163,7 @@ def main():
             st.success("Unfortunately, you are likely to default on your loan.")
         else:
             st.write("")
-            st.success("Congratulations! You are not likely to default on your loan.")
+            st.success("Congrats! You are not likely to default on your loan.")
             st.write("")
 
         st.write("Thank you for using the credit risk app!")
