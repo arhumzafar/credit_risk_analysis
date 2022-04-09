@@ -140,7 +140,7 @@ def main():
     loan_amount = st.sidebar.slider("Loan Amount in dollars:", 0, 100000, 15000)
     credit_length = st.sidebar.slider("Credit history length in years:", 0, 50, 5)
     default_history = st.sidebar.radio("Have you defaulted on a loan before?", ("Yes", "No"))
-    home_ownership = st.sidebar.radio("Select your home ownership status:", ("Mortgage", "Rent", "Own", "Rent"))
+    home_ownership = st.sidebar.radio("Select your home ownership status:", ("Mortgage", "Rent", "Own", "Other"))
     loan_intent = st.sidebar.radio("Select your loan intent:", ("Debt Consolidation", "Education", "Home Improvement", "Medical",
     "Personal", "Venture"))
 
