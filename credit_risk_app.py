@@ -117,7 +117,7 @@ def main():
     html_temp = """ 
     <div style ="background-color:Beige;padding:13px"> 
     <h1 style ="color:black;text-align:center;">Credit Risk App </h1> 
-    <h2 style ="color:black;text-align:center;"> By: Arhum Zafar </h2> 
+    <h3 style ="color:black;text-align:center;"> arhum zafar </h3> 
     </div> 
     """
 
