@@ -38,7 +38,6 @@ google-auth==2.6.0
 google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
 h5py @ file:///Users/builder/miniconda3/envs/prefect/conda-bld/h5py_1637162753555/work
-idna @ file:///tmp/build/80754af9/idna_1637925883363/work
 importlib-metadata @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_croot-5pqd2z6f/importlib-metadata_1648710902288/work
 ipykernel @ file:///Users/runner/miniforge3/conda-bld/ipykernel_1644262917118/work/dist/ipykernel-6.9.0-py3-none-any.whl
 ipython @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/croot-i0k1c2sa/ipython_1643819080541/work
