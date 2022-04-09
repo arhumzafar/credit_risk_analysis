@@ -123,7 +123,7 @@ def main():
 
     st.markdown(html_temp, unsafe_allow_html=True)
 
-    st.title("Welcome to the Credit Risk App!")
+    st.title("Welcome!")
     st.subheader("Begin entering your financial information on the left.")
     st.subheader("The app will then predict whether you will default on your loan.")
     st.write("If there are no fields on the left, click the arrow in the upper left corner.")
