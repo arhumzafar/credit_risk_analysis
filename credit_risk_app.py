@@ -16,6 +16,11 @@ classifier = pickle.load(pickle_in)
 # function that produces the default prediction
 def prediction(age, income, emp_length, loan_amount, int_rate, default_history, credit_length, home_ownership, loan_intent):
 
+
+    # features to reference later
+    pho_Mortgage, pho_Rent, pho_Own, pho_Other = 0, 0, 0, 0
+    intent_DC, intent_Education, intent_Home_Improvement, intent_Medical, intent_Personal, intent_Venture = 0, 0, 0, 0, 0, 0
+
     # Processing user inputs
 
     ## Default History
@@ -28,67 +33,25 @@ def prediction(age, income, emp_length, loan_amount, int_rate, default_history, 
     ## Home Ownership
     if home_ownership == "Mortgage":
         pho_Mortgage = 1
-        pho_Other = 0
-        pho_Own = 0
-        pho_Rent = 0
     elif home_ownership == "Other":
-        pho_Mortgage = 0
         pho_Other = 1
-        pho_Own = 0
-        pho_Rent = 0
     elif home_ownership == "Own":
-        pho_Mortgage = 0
-        pho_Other = 0
         pho_Own = 1
-        pho_Rent = 0
     elif home_ownership == "Rent":
-        pho_Mortgage = 0
-        pho_Other = 0
-        pho_Own = 0
         pho_Rent = 1
 
     ## Loan Intent
     if loan_intent == "Debt Consolidation":
         intent_DC = 1
-        intent_Education = 0
-        intent_Home_Improvement = 0
-        intent_Medical = 0
-        intent_Personal = 0
-        intent_Venture = 0
     elif loan_intent == "Education":
-        intent_DC = 0
         intent_Education = 1
-        intent_Home_Improvement = 0
-        intent_Medical = 0
-        intent_Personal = 0
-        intent_Venture = 0
     elif loan_intent == "Home Improvement":
-        intent_DC = 0
-        intent_Education = 0
         intent_Home_Improvement = 1
-        intent_Medical = 0
-        intent_Personal = 0
-        intent_Venture = 0
     elif loan_intent == "Medical":
-        intent_DC = 0
-        intent_Education = 0
-        intent_Home_Improvement = 0
         intent_Medical = 1
-        intent_Personal = 0
-        intent_Venture = 0
     elif loan_intent == "Personal":
-        intent_DC = 0
-        intent_Education = 0
-        intent_Home_Improvement = 0
-        intent_Medical = 0
         intent_Personal = 1
-        intent_Venture = 0
     elif loan_intent == "Venture":
-        intent_DC = 0
-        intent_Education = 0
-        intent_Home_Improvement = 0
-        intent_Medical = 0
-        intent_Personal = 0
         intent_Venture = 1
 
     ## Loan Percent Income
